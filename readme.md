@@ -1,4 +1,4 @@
-# PHP Laravel Exercise
+# PHP Laravel Exercise Resolution
 
 ## Evaluation Points
 
@@ -35,16 +35,63 @@ Generate a API endpoint to retrieve superheroes. The endpoint need to be able to
 ### Installation guide
 
 1. Clone the repo:
-`git clone git@bitbucket.org:consultr/laravel.git`
-2. Once you cloned the repository, you will need to create a MySQL database
+`git clone git@github.com:DiazLighuen/consultr.git`
+2. Once you cloned the repository, you will need to create a MySQL database named `consultr`
 3. Setup the `exercise/.env` file
 4. Execute the command: `sh scripts/install.sh`
-5. You are ready to start coding.
+5. Execute `php artisan serve`
+6. You are ready to test the resolution.
  
-## Q&A 
+## Endpoints 
 
-### Doubts?
-You can send us an email to federico.cardinali@consultr.net
+### Import csv
+`http://localhost:8000/api/import`
 
-### Finished?
-You can send us an email to federico.cardinali@consultr.net with a git repository link and instructions to run the exercise.
+### Get heroes
+`http://localhost:8000/api/heroes`
+
+#### Optional GET params
+
+**page**: Pagination. Values(`integer`)
+
+**sort**: Order by parameter (default = name). Values(`ASC`,`DES`).
+
+**orderBy**: Parameter used by sort. Values(`name`,`fullName`,`strength`,`speed`,`durability`,`power`,`combat`,`height0`,
+                                          `height1`,`weight0`,`weight1`,`eyeColor`,`hairColor`,`race`,
+                                          `publisher`)
+
+**name**: Filter. Values(`string`).
+
+**fullName**: Filter. Values(`string`).
+
+**strength**: Filter. Values(`integer`).
+
+**speed**: Filter. Values(`integer`).
+
+**durability**: Filter. Values(`integer`).
+
+**power**: Filter. Values(`integer`).
+
+**combat**: Filter. Values(`integer`).
+
+**height0**: Filter. Values(`string`).
+
+**height1**: Filter. Values(`string`).
+
+**weight0**: Filter. Values(`string`).
+
+**weight1**: Filter. Values(`string`).
+
+**eyeColor**: Filter. Values(`string`).
+
+**hairColor**: Filter. Values(`string`).
+
+**race**: Filter. Values(`string`).
+
+**publisher**: Filter. Values(`string`).
+
+### Visual Endpoint
+`http://localhost:8000/` (same parameters as api endpoint)
+
+## Postman Collection
+`consultr.postman_collection.json`

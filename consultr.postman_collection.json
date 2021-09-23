@@ -1,0 +1,304 @@
+{
+	"info": {
+		"_postman_id": "db877938-62f5-4ce2-8667-cc8483695c3f",
+		"name": "consultr",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Visual request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/?page=1&sort=desc&orderBy=speed&strength=100&race=Human",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1",
+							"description": "Pagination. Values(integer)"
+						},
+						{
+							"key": "sort",
+							"value": "desc",
+							"description": "Order by parameter (default = name). Values(ASC,DES)."
+						},
+						{
+							"key": "orderBy",
+							"value": "speed",
+							"description": "Parameter used by sort. Values(name,fullName,strength,speed,durability,power,combat,height0, height1,weight0,weight1,eyeColor,hairColor,race, publisher)"
+						},
+						{
+							"key": "name",
+							"value": "",
+							"description": "Filter. Values(string).",
+							"disabled": true
+						},
+						{
+							"key": "fullName",
+							"value": "",
+							"description": "Filter. Values(string).",
+							"disabled": true
+						},
+						{
+							"key": "strength",
+							"value": "100",
+							"description": "Filter. Values(integer)"
+						},
+						{
+							"key": "speed",
+							"value": "",
+							"description": "Filter. Values(integer)",
+							"disabled": true
+						},
+						{
+							"key": "durability",
+							"value": "",
+							"description": "Filter. Values(integer)",
+							"disabled": true
+						},
+						{
+							"key": "power",
+							"value": "",
+							"description": "Filter. Values(integer)",
+							"disabled": true
+						},
+						{
+							"key": "combat",
+							"value": "",
+							"description": "Filter. Values(integer)",
+							"disabled": true
+						},
+						{
+							"key": "height0",
+							"value": "",
+							"description": "Filter. Values(string).",
+							"disabled": true
+						},
+						{
+							"key": "height1",
+							"value": "",
+							"description": "Filter. Values(string).",
+							"disabled": true
+						},
+						{
+							"key": "weight0",
+							"value": "",
+							"description": "Filter. Values(string).",
+							"disabled": true
+						},
+						{
+							"key": "weight1",
+							"value": "",
+							"description": "Filter. Values(string).",
+							"disabled": true
+						},
+						{
+							"key": "eyeColor",
+							"value": "",
+							"description": "Filter. Values(string).",
+							"disabled": true
+						},
+						{
+							"key": "hairColor",
+							"value": "",
+							"description": "Filter. Values(string).",
+							"disabled": true
+						},
+						{
+							"key": "hairColor",
+							"value": "",
+							"description": "Filter. Values(string).",
+							"disabled": true
+						},
+						{
+							"key": "race",
+							"value": "Human",
+							"description": "Filter. Values(string)."
+						},
+						{
+							"key": "publisher",
+							"value": "",
+							"description": "Filter. Values(string).",
+							"disabled": true
+						}
+					]
+				},
+				"description": "This is an optional visual request"
+			},
+			"response": []
+		},
+		{
+			"name": "API Endpoint GetAll with Filters",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/heroes?page=1&sort=desc&orderBy=speed&strength=100&race=Human",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"heroes"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1",
+							"description": "Pagination. Values(integer)"
+						},
+						{
+							"key": "sort",
+							"value": "desc",
+							"description": "Order by parameter (default = name). Values(ASC,DES)."
+						},
+						{
+							"key": "orderBy",
+							"value": "speed",
+							"description": "Parameter used by sort. Values(name,fullName,strength,speed,durability,power,combat,height0, height1,weight0,weight1,eyeColor,hairColor,race, publisher)"
+						},
+						{
+							"key": "name",
+							"value": "",
+							"description": "Filter. Values(string).",
+							"disabled": true
+						},
+						{
+							"key": "fullName",
+							"value": "",
+							"description": "Filter. Values(string).",
+							"disabled": true
+						},
+						{
+							"key": "strength",
+							"value": "100",
+							"description": "Filter. Values(integer)"
+						},
+						{
+							"key": "speed",
+							"value": "",
+							"description": "Filter. Values(integer)",
+							"disabled": true
+						},
+						{
+							"key": "durability",
+							"value": "",
+							"description": "Filter. Values(integer)",
+							"disabled": true
+						},
+						{
+							"key": "power",
+							"value": "",
+							"description": "Filter. Values(integer)",
+							"disabled": true
+						},
+						{
+							"key": "combat",
+							"value": "",
+							"description": "Filter. Values(integer)",
+							"disabled": true
+						},
+						{
+							"key": "height0",
+							"value": "",
+							"description": "Filter. Values(string).",
+							"disabled": true
+						},
+						{
+							"key": "height1",
+							"value": "",
+							"description": "Filter. Values(string).",
+							"disabled": true
+						},
+						{
+							"key": "weight0",
+							"value": "",
+							"description": "Filter. Values(string).",
+							"disabled": true
+						},
+						{
+							"key": "weight1",
+							"value": "",
+							"description": "Filter. Values(string).",
+							"disabled": true
+						},
+						{
+							"key": "eyeColor",
+							"value": "",
+							"description": "Filter. Values(string).",
+							"disabled": true
+						},
+						{
+							"key": "hairColor",
+							"value": "",
+							"description": "Filter. Values(string).",
+							"disabled": true
+						},
+						{
+							"key": "hairColor",
+							"value": "",
+							"description": "Filter. Values(string).",
+							"disabled": true
+						},
+						{
+							"key": "race",
+							"value": "Human",
+							"description": "Filter. Values(string)."
+						},
+						{
+							"key": "publisher",
+							"value": "",
+							"description": "Filter. Values(string).",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Requested endpoint with filters, sort and pagination"
+			},
+			"response": []
+		},
+		{
+			"name": "API Endpoint to run import from csv",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/import",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"import"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
